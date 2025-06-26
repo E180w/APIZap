@@ -364,7 +364,6 @@ fi
 ## 📞 Поддержка
 
 - 🐛 **Баги**: [GitHub Issues](https://github.com/E180w/APIZap/issues)
-- 💡 **Предложения**: [GitHub Discussions](https://github.com/E180w/apizap/discussions)
 
 ## 🏆 Альтернативы
 
