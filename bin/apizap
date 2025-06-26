@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+"""Исполняемый скрипт для APIZap."""
+
+import sys
+import os
+
+# Добавляем родительскую папку в путь для импорта
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from apizap.cli import main
+
+if __name__ == '__main__':
+    main() 

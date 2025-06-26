@@ -1,0 +1,2 @@
+[console_scripts]
+apizap = apizap.cli:main

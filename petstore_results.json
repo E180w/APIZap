@@ -1,0 +1,268 @@
+{
+  "summary": {
+    "total_tests": 20,
+    "passed": 5,
+    "warnings": 15,
+    "failed": 0,
+    "success_rate": 25.0,
+    "total_time_ms": 3466.94,
+    "average_time_ms": 173.35
+  },
+  "tests": [
+    {
+      "operation_id": "uploadFile",
+      "method": "POST",
+      "path": "/pet/{petId}/uploadImage",
+      "summary": "uploads an image",
+      "status": "WARN",
+      "status_code": 415,
+      "response_time_ms": 653.82,
+      "response_size_bytes": 2274,
+      "error": "Клиентская ошибка: 415",
+      "timestamp": "2025-06-26T22:06:12.696217"
+    },
+    {
+      "operation_id": "addPet",
+      "method": "POST",
+      "path": "/pet",
+      "summary": "Add a new pet to the store",
+      "status": "WARN",
+      "status_code": 415,
+      "response_time_ms": 148.97,
+      "response_size_bytes": 2244,
+      "error": "Клиентская ошибка: 415",
+      "timestamp": "2025-06-26T22:06:13.451178"
+    },
+    {
+      "operation_id": "updatePet",
+      "method": "PUT",
+      "path": "/pet",
+      "summary": "Update an existing pet",
+      "status": "WARN",
+      "status_code": 415,
+      "response_time_ms": 146.79,
+      "response_size_bytes": 2244,
+      "error": "Клиентская ошибка: 415",
+      "timestamp": "2025-06-26T22:06:13.701170"
+    },
+    {
+      "operation_id": "findPetsByStatus",
+      "method": "GET",
+      "path": "/pet/findByStatus",
+      "summary": "Finds Pets by status",
+      "status": "PASS",
+      "status_code": 200,
+      "response_time_ms": 147.42,
+      "response_size_bytes": 2,
+      "error": null,
+      "timestamp": "2025-06-26T22:06:13.948981"
+    },
+    {
+      "operation_id": "findPetsByTags",
+      "method": "GET",
+      "path": "/pet/findByTags",
+      "summary": "Finds Pets by tags",
+      "status": "PASS",
+      "status_code": 200,
+      "response_time_ms": 147.36,
+      "response_size_bytes": 2,
+      "error": null,
+      "timestamp": "2025-06-26T22:06:14.197849"
+    },
+    {
+      "operation_id": "getPetById",
+      "method": "GET",
+      "path": "/pet/{petId}",
+      "summary": "Find pet by ID",
+      "status": "WARN",
+      "status_code": 404,
+      "response_time_ms": 147.25,
+      "response_size_bytes": 107,
+      "error": "Клиентская ошибка: 404",
+      "timestamp": "2025-06-26T22:06:14.446438"
+    },
+    {
+      "operation_id": "updatePetWithForm",
+      "method": "POST",
+      "path": "/pet/{petId}",
+      "summary": "Updates a pet in the store with form data",
+      "status": "WARN",
+      "status_code": 404,
+      "response_time_ms": 145.84,
+      "response_size_bytes": 107,
+      "error": "Клиентская ошибка: 404",
+      "timestamp": "2025-06-26T22:06:14.695374"
+    },
+    {
+      "operation_id": "deletePet",
+      "method": "DELETE",
+      "path": "/pet/{petId}",
+      "summary": "Deletes a pet",
+      "status": "WARN",
+      "status_code": 404,
+      "response_time_ms": 147.0,
+      "response_size_bytes": 107,
+      "error": "Клиентская ошибка: 404",
+      "timestamp": "2025-06-26T22:06:14.942551"
+    },
+    {
+      "operation_id": "getInventory",
+      "method": "GET",
+      "path": "/store/inventory",
+      "summary": "Returns pet inventories by status",
+      "status": "PASS",
+      "status_code": 200,
+      "response_time_ms": 146.68,
+      "response_size_bytes": 338,
+      "error": null,
+      "timestamp": "2025-06-26T22:06:15.190928"
+    },
+    {
+      "operation_id": "placeOrder",
+      "method": "POST",
+      "path": "/store/order",
+      "summary": "Place an order for a pet",
+      "status": "WARN",
+      "status_code": 415,
+      "response_time_ms": 147.97,
+      "response_size_bytes": 2248,
+      "error": "Клиентская ошибка: 415",
+      "timestamp": "2025-06-26T22:06:15.439381"
+    },
+    {
+      "operation_id": "getOrderById",
+      "method": "GET",
+      "path": "/store/order/{orderId}",
+      "summary": "Find purchase order by ID",
+      "status": "WARN",
+      "status_code": 404,
+      "response_time_ms": 148.09,
+      "response_size_bytes": 107,
+      "error": "Клиентская ошибка: 404",
+      "timestamp": "2025-06-26T22:06:15.689066"
+    },
+    {
+      "operation_id": "deleteOrder",
+      "method": "DELETE",
+      "path": "/store/order/{orderId}",
+      "summary": "Delete purchase order by ID",
+      "status": "WARN",
+      "status_code": 404,
+      "response_time_ms": 147.96,
+      "response_size_bytes": 107,
+      "error": "Клиентская ошибка: 404",
+      "timestamp": "2025-06-26T22:06:15.939020"
+    },
+    {
+      "operation_id": "createUsersWithListInput",
+      "method": "POST",
+      "path": "/user/createWithList",
+      "summary": "Creates list of users with given input array",
+      "status": "WARN",
+      "status_code": 415,
+      "response_time_ms": 151.18,
+      "response_size_bytes": 2242,
+      "error": "Клиентская ошибка: 415",
+      "timestamp": "2025-06-26T22:06:16.188315"
+    },
+    {
+      "operation_id": "getUserByName",
+      "method": "GET",
+      "path": "/user/{username}",
+      "summary": "Get user by user name",
+      "status": "WARN",
+      "status_code": 404,
+      "response_time_ms": 146.9,
+      "response_size_bytes": 52,
+      "error": "Клиентская ошибка: 404",
+      "timestamp": "2025-06-26T22:06:16.441362"
+    },
+    {
+      "operation_id": "updateUser",
+      "method": "PUT",
+      "path": "/user/{username}",
+      "summary": "Updated user",
+      "status": "WARN",
+      "status_code": 415,
+      "response_time_ms": 151.55,
+      "response_size_bytes": 2246,
+      "error": "Клиентская ошибка: 415",
+      "timestamp": "2025-06-26T22:06:16.689153"
+    },
+    {
+      "operation_id": "deleteUser",
+      "method": "DELETE",
+      "path": "/user/{username}",
+      "summary": "Delete user",
+      "status": "WARN",
+      "status_code": 404,
+      "response_time_ms": 149.82,
+      "response_size_bytes": 0,
+      "error": "Клиентская ошибка: 404",
+      "timestamp": "2025-06-26T22:06:16.942445"
+    },
+    {
+      "operation_id": "loginUser",
+      "method": "GET",
+      "path": "/user/login",
+      "summary": "Logs user into the system",
+      "status": "PASS",
+      "status_code": 200,
+      "response_time_ms": 148.14,
+      "response_size_bytes": 78,
+      "error": null,
+      "timestamp": "2025-06-26T22:06:17.193551"
+    },
+    {
+      "operation_id": "logoutUser",
+      "method": "GET",
+      "path": "/user/logout",
+      "summary": "Logs out current logged in user session",
+      "status": "PASS",
+      "status_code": 200,
+      "response_time_ms": 145.62,
+      "response_size_bytes": 44,
+      "error": null,
+      "timestamp": "2025-06-26T22:06:17.443998"
+    },
+    {
+      "operation_id": "createUsersWithArrayInput",
+      "method": "POST",
+      "path": "/user/createWithArray",
+      "summary": "Creates list of users with given input array",
+      "status": "WARN",
+      "status_code": 415,
+      "response_time_ms": 149.55,
+      "response_size_bytes": 2252,
+      "error": "Клиентская ошибка: 415",
+      "timestamp": "2025-06-26T22:06:17.690623"
+    },
+    {
+      "operation_id": "createUser",
+      "method": "POST",
+      "path": "/user",
+      "summary": "Create user",
+      "status": "WARN",
+      "status_code": 415,
+      "response_time_ms": 149.03,
+      "response_size_bytes": 2246,
+      "error": "Клиентская ошибка: 415",
+      "timestamp": "2025-06-26T22:06:17.941210"
+    }
+  ],
+  "metadata": {
+    "generator": "APIZap v1.0.0",
+    "generated_at": "2025-06-26T22:06:18.190923",
+    "format_version": "1.0"
+  },
+  "status_code_distribution": {
+    "415": 8,
+    "200": 5,
+    "404": 7
+  },
+  "response_time_stats": {
+    "min_ms": 145.62,
+    "max_ms": 653.82,
+    "avg_ms": 173.35
+  }
+}

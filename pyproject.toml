@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apizap"
+version = "1.0.0"
+description = "Автоматический генератор тестов для API на основе OpenAPI спецификаций"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "APIZap Team", email = "info@apizap.dev"}
+]
+keywords = ["api", "testing", "openapi", "swagger", "automation", "cli"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "click>=8.0.0",
+    "requests>=2.28.0",
+    "pydantic>=2.0.0",
+    "loguru>=0.6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/apizap/apizap"
+Documentation = "https://github.com/apizap/apizap#readme"
+Repository = "https://github.com/apizap/apizap.git"
+"Bug Reports" = "https://github.com/apizap/apizap/issues"
+
+[project.scripts]
+apizap = "apizap.cli:main"
+
+[tool.setuptools]
+packages = ["apizap"]
+
+[tool.setuptools.package-data]
+apizap = ["*.txt", "*.md"] 

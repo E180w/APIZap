@@ -1,0 +1,87 @@
+{
+  "summary": {
+    "total_tests": 5,
+    "passed": 2,
+    "warnings": 3,
+    "failed": 0,
+    "success_rate": 40.0,
+    "total_time_ms": 1249.91,
+    "average_time_ms": 249.98
+  },
+  "tests": [
+    {
+      "operation_id": "uploadFile",
+      "method": "POST",
+      "path": "/pet/{petId}/uploadImage",
+      "summary": "uploads an image",
+      "status": "WARN",
+      "status_code": 415,
+      "response_time_ms": 654.57,
+      "response_size_bytes": 2274,
+      "error": "Клиентская ошибка: 415",
+      "timestamp": "2025-06-26T22:03:58.782044"
+    },
+    {
+      "operation_id": "addPet",
+      "method": "POST",
+      "path": "/pet",
+      "summary": "Add a new pet to the store",
+      "status": "WARN",
+      "status_code": 415,
+      "response_time_ms": 149.24,
+      "response_size_bytes": 2244,
+      "error": "Клиентская ошибка: 415",
+      "timestamp": "2025-06-26T22:03:59.637760"
+    },
+    {
+      "operation_id": "updatePet",
+      "method": "PUT",
+      "path": "/pet",
+      "summary": "Update an existing pet",
+      "status": "WARN",
+      "status_code": 415,
+      "response_time_ms": 148.63,
+      "response_size_bytes": 2244,
+      "error": "Клиентская ошибка: 415",
+      "timestamp": "2025-06-26T22:03:59.987802"
+    },
+    {
+      "operation_id": "findPetsByStatus",
+      "method": "GET",
+      "path": "/pet/findByStatus",
+      "summary": "Finds Pets by status",
+      "status": "PASS",
+      "status_code": 200,
+      "response_time_ms": 148.87,
+      "response_size_bytes": 2,
+      "error": null,
+      "timestamp": "2025-06-26T22:04:00.337924"
+    },
+    {
+      "operation_id": "findPetsByTags",
+      "method": "GET",
+      "path": "/pet/findByTags",
+      "summary": "Finds Pets by tags",
+      "status": "PASS",
+      "status_code": 200,
+      "response_time_ms": 148.6,
+      "response_size_bytes": 2,
+      "error": null,
+      "timestamp": "2025-06-26T22:04:00.688026"
+    }
+  ],
+  "metadata": {
+    "generator": "APIZap v1.0.0",
+    "generated_at": "2025-06-26T22:04:01.039069",
+    "format_version": "1.0"
+  },
+  "status_code_distribution": {
+    "415": 3,
+    "200": 2
+  },
+  "response_time_stats": {
+    "min_ms": 148.6,
+    "max_ms": 654.57,
+    "avg_ms": 249.98
+  }
+}
