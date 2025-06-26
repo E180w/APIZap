@@ -363,9 +363,8 @@ fi
 
 ## 📞 Поддержка
 
-- 🐛 **Баги**: [GitHub Issues](https://github.com/apizap/apizap/issues)
-- 💡 **Предложения**: [GitHub Discussions](https://github.com/apizap/apizap/discussions)
-- 📧 **Email**: info@apizap.dev
+- 🐛 **Баги**: [GitHub Issues](https://github.com/E180w/APIZap/issues)
+- 💡 **Предложения**: [GitHub Discussions](https://github.com/E180w/apizap/discussions)
 
 ## 🏆 Альтернативы
 
